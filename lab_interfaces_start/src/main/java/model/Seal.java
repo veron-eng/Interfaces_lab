@@ -3,14 +3,14 @@ package model;
 import model.interfaces.IAnimal;
 import model.interfaces.ISwim;
 import model.interfaces.IPrey;
-public class Seal implements IAnimal, ISwim, IPrey {
+public class Seal implements IAnimal, ISwim, IPrey{
 
-    @Override
+    //@Override
     public void eat() {
         System.out.println("Seal is eating");
     }
 
-    @Override
+    //@Override
     public void sleep() {
         System.out.println("Seal is sleeping");
     }
@@ -20,13 +20,17 @@ public class Seal implements IAnimal, ISwim, IPrey {
         System.out.println("Seal is swimming");
     }
 
-    @Override
+    //@Override
     public void flee() {
         System.out.println("Seal is fleeing from a predator");
     }
 
     public void animal(){
         System.out.println("seal is an animal");
+    }
+
+    public void prey(){
+        System.out.println("seal is being hunted");
     }
 
 }
